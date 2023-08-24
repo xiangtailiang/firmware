@@ -1,11 +1,5 @@
 name: build
 on:
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 env:
@@ -26,6 +20,8 @@ jobs:
           - platform: ssc335
             release: lite
           - platform: ssc335de
+            release: lite
+          - platform: t31
             release: lite
         
     steps:
